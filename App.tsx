@@ -30,6 +30,15 @@ const animationStyles = `
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+@keyframes animate-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient-pan {
+    background-size: 200% 200%;
+    animation: animate-gradient 15s ease infinite;
+}
 `;
 
 const App: React.FC = () => {
@@ -147,7 +156,7 @@ const App: React.FC = () => {
   return (
     <>
     <style>{animationStyles}</style>
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950 text-slate-200 antialiased">
+    <div className="min-h-screen w-full bg-gradient-to-br from-slate-900 via-indigo-950 to-purple-950 text-slate-200 antialiased animate-gradient-pan">
       <main className="container mx-auto px-4 py-8 sm:py-16">
         <header className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-2">
