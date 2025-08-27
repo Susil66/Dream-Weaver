@@ -1,0 +1,5 @@
+{
+  "name": "Dream Weaver",
+  "description": "An application that uses AI to analyze the symbolism and themes of your dreams, and then generates a beautiful, artistic visualization based on your description.",
+  "requestFramePermissions": []
+}
